@@ -24,7 +24,7 @@ public class LostItem extends BaseItem {
             throw new IllegalArgumentException("Owner name cannot be null or empty");
         }
         this.ownerName = ownerName;
-        this.lostLocation = lostLocation; // nullable
+        this.lostLocation = lostLocation;
     }
 
 

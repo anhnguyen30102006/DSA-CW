@@ -23,11 +23,11 @@ public abstract class BaseItem {
         }
         this.itemID = itemID;
         this.description = description;
-        this.brand = brand;         // nullable
-        this.color = color;         // nullable
-        this.condition = condition; // nullable
+        this.brand = brand;
+        this.color = color;
+        this.condition = condition;
         this.date = date;
-        this.claimed = false;       // default
+        this.claimed = false;
     }
 
 

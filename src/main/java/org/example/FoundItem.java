@@ -19,7 +19,7 @@ public class FoundItem extends BaseItem {
             throw new IllegalArgumentException("Finder name cannot be null or empty");
         }
         this.finderName = finderName;
-        this.foundLocation = foundLocation; // nullable
+        this.foundLocation = foundLocation;
     }
 
 
