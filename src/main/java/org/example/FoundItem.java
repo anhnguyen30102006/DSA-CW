@@ -22,8 +22,6 @@ public class FoundItem extends BaseItem {
         this.foundLocation = foundLocation;
     }
 
-
-// getFoundLocation,getFinderName methods are used in future extensions
     public String getFoundLocation() {
         return foundLocation;
     }
@@ -32,12 +30,12 @@ public class FoundItem extends BaseItem {
         return finderName;
     }
 
-
     @Override
     public String getDetails() {
         return super.getDetails() +
                 "\nFinder Name: " + finderName +
                 "\nFound Location: " + (foundLocation != null ? foundLocation : "N/A");
     }
+
 }
 

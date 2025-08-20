@@ -5,9 +5,8 @@ import java.time.LocalDate;
 
 
 public abstract class BaseItem {
-    // ===== Fields =====
-    protected String itemID;           // not null
-    protected String description;      // not null
+    protected String itemID;            // not null
+    protected String description;       // not null
     protected String brand;             // nullable
     protected String color;             // nullable
     protected String condition;         // nullable
@@ -15,7 +14,6 @@ public abstract class BaseItem {
     protected boolean claimed;          // not null, default false
 
 
-    // ===== Constructor =====
     public BaseItem(String itemID, String description, String brand,
                     String color, String condition, LocalDate date) {
         if (itemID == null || description == null || date == null) {
@@ -31,7 +29,6 @@ public abstract class BaseItem {
     }
 
 
-    // ===== Getters =====
     public String getItemID() {
         return itemID;
     }
@@ -72,7 +69,6 @@ public abstract class BaseItem {
         return date;
     }
 
-// getBrand,getColor,getCondition methods are used in future extensions
     public String getBrand() {
         return brand;
     }
